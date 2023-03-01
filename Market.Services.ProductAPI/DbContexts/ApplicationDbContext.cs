@@ -41,7 +41,6 @@ namespace Market.Services.ProductAPI.DbContexts
                 CategoryName = "Glossery",
                 Description = "An Excellent Product of Vahid's land",
                 ImageUrl = "https://drive.google.com/file/d/1mflyDEZJPoHEsGoaDINJExFPZH-GgJlR/view?usp=share_link",
-                ImageUrl = "",
                 Price = 500
             }); 
             modelBuilder.Entity<Product>().HasData(new Product
@@ -51,7 +50,6 @@ namespace Market.Services.ProductAPI.DbContexts
                 CategoryName = "Glossery",
                 Description = "An Excellent Product of Delsa's Hand",
                 ImageUrl = "https://drive.google.com/file/d/1tviPDv5KFEk4-c21vy5jak27jOr54rrV/view?usp=share_link",
-                ImageUrl = "",
                 Price = 1000
             }); 
             modelBuilder.Entity<Product>().HasData(new Product
@@ -61,7 +59,6 @@ namespace Market.Services.ProductAPI.DbContexts
                 CategoryName = "Mobile",
                 Description = "An Excellent Product of Apple",
                 ImageUrl = "https://drive.google.com/file/d/14ViuJVRMnrSmnJq-ohfcyMO-zJAVJ6eS/view?usp=share_link",
-                ImageUrl = "",
                 Price = 10000
             }); 
         }
