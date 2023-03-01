@@ -3,6 +3,7 @@ using Market.Services.ProductAPI.DbContexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Market.Services.ProductAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230224084801_seedProductImageUrl")]
+    partial class seedProductImageUrl
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -64,7 +67,6 @@ namespace Market.Services.ProductAPI.Migrations
                             ProductId = 2,
                             CategoryName = "TV",
                             Description = "An Excellent Product in TV",
-
                             ImageUrl = "https://drive.google.com/file/d/1wGdfFJ9D8FCEBpNSK6N-YBZn7o8OYtDA/view?usp=share_link",
                             Name = "P2",
                             Price = 3000

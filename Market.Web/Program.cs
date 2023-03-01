@@ -1,6 +1,16 @@
+using Market.Web;
+using Market.Web.Controllers;
+using Market.Web.Services;
+using Market.Web.Services.Contracts;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddHttpClient<IProductService, ProductService>();
+StaticDetails.ProductAPIBase = builder.Configuration["ServicesUrl:ProductApiBase"];
+builder.Services.AddScoped<IProductService, ProductService>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
