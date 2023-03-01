@@ -64,6 +64,7 @@ namespace Market.Services.ProductAPI.Migrations
                             ProductId = 2,
                             CategoryName = "TV",
                             Description = "An Excellent Product in TV",
+
                             ImageUrl = "https://drive.google.com/file/d/1wGdfFJ9D8FCEBpNSK6N-YBZn7o8OYtDA/view?usp=share_link",
                             Name = "P2",
                             Price = 3000
